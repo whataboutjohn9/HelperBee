@@ -60,7 +60,7 @@ The UI is a single-page application (`bee-page`) using:
 
 ## ⚙️ Setup & Installation
 
-**Prerequequisites**
+**Prerequisites**
 * PHP: 7.4+
 * MySQL: 5.7+ (required for the REGEXP syntax used)
 * Web Server: Apache/Nginx or local (XAMPP/MAMP)
