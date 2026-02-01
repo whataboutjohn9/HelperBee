@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Helper Bee</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    
+<main class="bee-page"><div id="bee-app">
+    <h1>Bee Finder</h1>
+    <h2>Designed to assist with the New York Times Spelling Bee Puzzle</h2>
+    <p>Sometimes the need for instant gratification is too strong, and one simply cannot wait a day to see what those words are that are standing between them and a Genius-level badge for the day. I have created a tool for just that occasion. I prefer to use it when I am stuck and advocate only responsible, admirable use, but if taunting and tormenting fellow players is your thing, have at it.</p>
+    <h2>How to Use</h2>
+<p>Enter the letters from the puzzle in the inputs below, bee amazed. Please note that this utility will yield more words than the puzzle, as I am using data from a broader source (details are on my github page). I view it as a great opportunity to learn some new, somewhat outrageous words. Enjoy!</p>
+ 
+<div class="card">
+    <h2>🐝 Spelling Bee Helper</h2>
+    
+    <div class="input-row">
+        <div class="input-group" style="flex: 0 0 100px;">
+            <label>Center</label>
+            <input type="text" id="center" maxlength="1" placeholder="B" style="text-align: center; text-transform: uppercase;">
+        </div>
+        <div class="input-group">
+            <label>All 7 Letters</label>
+            <input type="text" id="all" maxlength="7" placeholder="THEBALL" style="text-transform: uppercase; letter-spacing: 2px;">
+        </div>
+    </div>
+    
+    <div class="button-group">
+        <button class="btn-solve" onclick="solveBee()">Find Words</button>
+        <button class="btn-clear" onclick="clearForm()">Clear</button>
+    </div>
+
+    <ul id="results"></ul>
+</div>
+</main>
+<script src="bee-solver.js"></script>
+</body>
+</html>
